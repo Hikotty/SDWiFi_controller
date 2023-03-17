@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>SDWiFi Controller</title>
+    <style>
+      button { width: 100%; height: 20%; font-size: 5vw; }
+      #start-button { background-color: green; }
+      #stop-button { background-color: red; }
+    </style>
+  </head>
+  <body>
+    <button id="start-button" onclick="fetch('/start').then(() => alert('開始しました'))">開始</button>
+    <button id="stop-button" onclick="fetch('/stop').then(() => alert('停止しました'))">停止</button>
+  </body>
+</html>
